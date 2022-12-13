@@ -129,7 +129,7 @@ let forceExit = false;
     if (forceExit) {
       process.exit(exitCode);
     }
-    process.exitCode = exitCode;
+    process.exit(exitCode);
   })
   .catch((err: Error) => {
     // eslint-disable-next-line  no-console
